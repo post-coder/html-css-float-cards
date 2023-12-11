@@ -8,3 +8,25 @@
 body {
     font-family: 'Nunito', sans-serif;
 }
+
+.container {
+    border: solid 1px red;
+    /* test */
+
+    max-width: 1366px;
+    
+    /* dimensioni max */
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 40px 10px 20px;
+
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 60px;
+
+    color: #E5316F;
+}
