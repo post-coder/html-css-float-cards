@@ -5,13 +5,20 @@
 }
 /* reset */
 
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+/* clearfix */
+
+
 body {
     font-family: 'Nunito', sans-serif;
 }
 
 .container {
-    border: solid 1px red;
-    /* test */
 
     max-width: 1366px;
     
@@ -30,3 +37,73 @@ h1 {
 
     color: #E5316F;
 }
+
+
+/* sezione cards */
+
+.card {
+    float: left;
+    width: calc(100% / 3);
+
+    padding: 20px;
+
+    color: white;
+}
+
+.card:nth-child(3n + 1) {
+    padding-left: 0;
+}
+
+.card:nth-child(3n) {
+    padding-right: 0;
+}
+
+
+
+.card .card-inner {
+    
+    background-color: #0f0e17;
+    
+
+    box-shadow: 8px 8px 12px rgba(0,0,0, 0.2);
+}
+
+.card .card-image {
+
+    float: left;
+
+    margin-right: 16px;
+}
+
+.card .card-image img {
+    display: block;
+
+    height: 120px;
+    width: auto;
+}
+
+
+.card .card-text {
+    text-align: left;
+
+    padding: 16px 0;
+}
+
+.card .card-text > * {
+    display: block;
+
+    margin-bottom: 0.4em;
+}
+
+.card .card-text strong {
+    text-transform: uppercase;
+}
+
+.card .card-text a {
+    color: #26d9f8;
+    text-decoration: none;
+}
+
+
+/* fine sezione cards */
+
